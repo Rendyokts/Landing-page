@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    scroll-behavior: smooth ;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin-inline: auto;
+}
+
+header{
+    width:100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('img/header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navigation{
+    width:100%;
+    padding: 10px 0 20px 0;
+}
+
+.navigation .box-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navigation .box-navigation .box:nth-child(1) h1{
+  font-size: 38px;
+  color: white;
+  align-items: center;
+  
+}
+
+.navigation .box-navigation .box:nth-child(2) ul{
+    display: flex;
+    flex-direction: row;
+
+}
+.navigation .box-navigation .box:nth-child(2) ul li{
+    list-style-type: none;
+    margin-left: 40px;
+
+}
+.navigation .box-navigation .box:nth-child(2) ul li a{
+    text-decoration: none;
+    color:white;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+
+}
+.navigation .box-navigation .box:nth-child(2) ul li a:hover{
+    color:green;
+}
+.navigation .box-navigation .box:nth-child(3) {
+    display:none;
+}
+@media screen and (max-width:990px) {
+    .navigation .box-navigation .box:nth-child(2) {
+        display:flex;
+        flex-direction: column;
+        position: absolute;
+        top:100px;
+        right:100px;
+        background-color: white;
+        width: 250px;
+        border-radius: 10px;
+    }
+    .navigation .box-navigation .box:nth-child(2) ul {
+        flex-direction: column;
+    }
+    .navigation .box-navigation .box:nth-child(2) ul li a{
+        color:black;
+    }
+    .navigation .box-navigation .box:nth-child(2) ul li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+        .navigation .box-navigation .box:nth-child(3) {
+        display:flex;
+        align-items: center;
+    }
+    .navigation .box-navigation .box:nth-child(3) i {
+        font-size:28px;
+    }
+}
